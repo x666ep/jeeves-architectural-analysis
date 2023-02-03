@@ -1,2 +1,2 @@
-# staff-core-architectural-analysis
-staff core architectural analysis
+# jeeves-architectural-analysis
+jeeves architectural analysis

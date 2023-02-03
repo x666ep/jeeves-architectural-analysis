@@ -1,7 +1,7 @@
-baseURL = 'https://x666ep.github.io/staff-core-architectural-analysis'
+baseURL = 'https://x666ep.github.io/jeeves-architectural-analysis'
 canonifyURLs = true
 languageCode = 'ru-ru'
-title = 'Staff Core API'
+title = 'Jeeves API'
 
 theme = "reveal-hugo"
 

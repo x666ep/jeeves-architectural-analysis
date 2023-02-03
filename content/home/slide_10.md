@@ -1,7 +1,7 @@
 ## The end
 
 - Инструменты подготовки презентации:
-  - VScodium [https://vscodium.com/](https://vscodium.com/)
+  - VSCode [https://code.visualstudio.com/](https://code.visualstudio.com/)
   - Hugo [https://gohugo.io/](https://gohugo.io/)
   - RevealJS [https://revealjs.com/](https://revealjs.com/)
   - reveal-hugo theme [https://github.com/dzello/reveal-hugo](https://github.com/dzello/reveal-hugo)

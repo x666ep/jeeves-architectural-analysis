@@ -3,6 +3,6 @@ title = "Architectural Analysis"
 outputs = ["Reveal"]
 +++
 
-# Staff Core API
+# Jeeves API
 
 Serov Konstantin <kserov@ozon.ru>
