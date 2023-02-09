@@ -1,8 +1,10 @@
-### Deep Dive (Container)
+### Верхнеуровневая схема (Context)
 
 {{% note %}}
-- ответить на вопросы
+- Разные пользователи, разные действия которые они выполняют
+- Провайдеры
+- Кроны
 {{% /note %}}
 
 
-![](/images/data/diagrams/staff-core/Container.svg)
+![](/images/data/diagrams/high_level.svg)

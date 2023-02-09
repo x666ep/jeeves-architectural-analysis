@@ -15,7 +15,10 @@ baseName = "index"
 mediaType = "text/html"
 isHTML = true
 
+[markup.highlight]
+codeFences = false
 
 [params.reveal_hugo]
 custom_theme = "stylesheets/custom_white.css"
 slide_number = true
+highlight_theme = "github"
