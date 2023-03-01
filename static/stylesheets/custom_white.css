@@ -210,8 +210,8 @@ body {
 }
 
 .reveal pre code {
-  /* display: block;*/
-  font-size: 3.1em;
+  /* display: block; */
+  /* font-size: 3.1em; */
   padding: 5px;
   overflow: auto;
   max-height: 400px;

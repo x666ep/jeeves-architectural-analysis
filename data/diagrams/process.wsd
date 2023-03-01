@@ -1,0 +1,57 @@
+@startuml CalculatePersonalLicences_1
+skinparam ConditionEndStyle hline
+scale max 500 height
+    start
+        while (Перебираем массив ProfileLicenceRelation)
+            :Для каждого отношения вызываем CalculatePersonalLicences;
+            while (Собираем массив персональных лицензий для выдачи перебирая правила и лицензии в них)
+                if (Является ли лицензия в правиле НЕактивной?) then (no)
+                else
+                    break
+                endif
+                if (У сотрудника уже есть активированная лицензия или она ожидает активации?) then (no)
+                else
+                    break
+                endif
+                if (Лицензия не активируется автоматом и она уже выдана?) then (no)
+                else
+                    break
+                endif
+                :создаем персональную лицензию со статусом "выдана";
+                if (Лицензия требует автоматической активации?) then (no)
+                    break
+                else
+                    :устанавливаем статус "ожидает активации";
+                endif
+            endwhile
+        (A)
+        endwhile
+        :возвращаем массив персональных лицензий для активации/деактивации;
+    stop
+@enduml
+
+@startuml CalculatePersonalLicences_2
+skinparam ConditionEndStyle hline
+scale max 500 height
+    (A)
+    while (Собираем массив персональных лицензий для отъема перебирая массив уже выданных лицензий)
+        if (Лицензия выдана руками(назначена)?) then (no)
+        else
+            break
+        endif
+        if (Лицензия находится в правиле под которое попал сотрудник?) then (no)
+        else
+            break
+        endif
+        if (Подана заявка на лицензию и она ожидает апрува от рукля/супервизора?) then (no)
+        else
+            break
+        endif
+        if (Лицензия ожидает активацию/деактивацию?) then (no)
+        else
+            break
+        endif
+        :меняем статус лицензии на "Ожидает деактивации";
+    endwhile
+    (A)
+@enduml
